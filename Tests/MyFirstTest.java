@@ -9,7 +9,7 @@ public class MyFirstTest {
         Assert.assertEquals("should be 22",(dude.Year-dude.DOB), dude.CheckAge());
         Assert.assertEquals("Should be true",true,dude.ChangeDOB(1993));
         dude.ChangeDOB(1993);
-        Assert.assertEquals("should be 24",22, dude.CheckAge());
+        Assert.assertEquals("should be 24",(dude.Year-dude.DOB), dude.CheckAge());
 
     }
 }
