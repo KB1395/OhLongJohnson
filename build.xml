@@ -1,8 +1,9 @@
 <project name="OhLongJohnson">
-	<target name="Tests">
+	<target name="test">
 		<delete dir="bin" />
 		<mkdir dir="bin" />
-		<javac debug="on" includeantruntime="false" srcdir="." destdir="bin" classpath="lib/junit-4.12.jar" />
+		<javac debug="on" includeantruntime="false" srcdir="src" destdir="bin" classpath="lib/junit-4.12.jar" />
+		<javac debug="on" includeantruntime="false" srcdir="Tests" destdir="bin" classpath="lib/junit-4.12.jar" />
 		
 		<junit printsummary="on" showoutput="true" haltonfailure="yes" fork="true">
 			<classpath>
